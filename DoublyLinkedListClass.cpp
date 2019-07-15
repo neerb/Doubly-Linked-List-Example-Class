@@ -39,6 +39,7 @@ void DoublyLinkedList::append(int num)
         end = head;
     }
 }
+
 void DoublyLinkedList::push(int num)
 {
     Node *newHead = new Node;
@@ -173,7 +174,6 @@ void DoublyLinkedList::displayAllNodes()
     std::cout << std::endl;
 }
 
-//Broken when user deletes end (far right) node
 void DoublyLinkedList::reverseTraverseDisplay()
 {
     Node *previous = end;
