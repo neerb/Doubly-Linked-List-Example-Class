@@ -11,13 +11,17 @@ class DoublyLinkedList
     };
 
 private:
+    //Beginning of list pointer
     Node *head = nullptr;
+    //End of list pointer
     Node *end = nullptr;
 
-
 public:
+    //Constructors
     DoublyLinkedList();
     DoublyLinkedList(int initialNum);
+
+    //Linked List Methods and Operations
     void append(int num);
     void push(int num);
     void pop();
@@ -26,6 +30,9 @@ public:
     void sortList();
     void displayAllNodes();
     void reverseTraverseDisplay();
+
+    //Destructor
+    ~DoublyLinkedList();
 };
 
 

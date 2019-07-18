@@ -30,12 +30,14 @@ int main()
         cout << "6. Insert a node into the list." << endl;
         cout << "7. Delete a node from the list." << endl;
         cout << "8. Display list in reverse." << endl;
-        cout << "Enter an option: ";
+        cout << "Enter an option (-1 to exit): ";
 
         cin >> option;
 
         switch(option)
         {
+            case -1:
+                break;
             case 0:
                 dll.displayAllNodes();
                 break;
@@ -93,6 +95,12 @@ int main()
                 break;
         }
     }
+
+    cout << "Exiting program... Goodbye!" << endl;
+
+
+    //Call to destructor
+    dll.~DoublyLinkedList();
 
     return 0;
 }
